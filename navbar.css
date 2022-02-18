@@ -30,3 +30,10 @@
     background-color: #221f1f;
     color: white;
   }
+
+  /* put the bullets in front of images */
+.getfront{
+    position: absolute;
+    top: 680px;
+    left: 50%;
+}

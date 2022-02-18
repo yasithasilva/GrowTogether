@@ -5,8 +5,9 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
-  position: relative;
+  max-width: 1920px;
+  max-height:600px;
+  position: fixed;
   margin: auto;
 }
 
@@ -24,7 +25,7 @@ img {vertical-align: middle;}
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #B90E0A;
 }
 
 /* Fading animation */
