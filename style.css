@@ -1,0 +1,17 @@
+.iimg , .par {
+    display: inline-block;
+    vertical-align:middle;
+    
+  }
+  
+  .iimg {
+    float: left;
+    margin-left: 80px;
+    
+  }
+  .par {
+    float: right;
+    margin-top: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+  }
