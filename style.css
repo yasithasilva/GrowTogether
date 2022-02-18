@@ -1,17 +1,16 @@
-.iimg , .par {
-    display: inline-block;
-    vertical-align:middle;
-    
-  }
-  
-  .iimg {
-    float: left;
-    margin-left: 80px;
-    
-  }
-  .par {
-    float: right;
-    margin-top: 80px;
+.intro{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-  }
+    font-size: 22px;
+    margin-left: 440px;
+    line-height: 200%;
+    position: absolute;
+    top:700px;
+}
+
+.whoim{
+    margin-top: 80px;
+    margin-left: 80px;
+    width:300px;
+    height:300px;
+
+}
