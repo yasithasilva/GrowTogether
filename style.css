@@ -12,12 +12,38 @@
     margin-top: 80px;
     margin-left: 80px;
     width:300px;
-    height:300px;
-    
+    height:300px; 
 
 }
 
 #grad1 {
     background-color: rgb(163, 162, 162); /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, rgb(243, 240, 240) , rgb(99, 99, 99));
+  }
+
+.volhead{
+    position:absolute;
+    z-index:99;
+    top:1500px;
+    left:40px;
+    color:aliceblue;
+    line-height:150%;
+    opacity:75%;
+}
+
+.signbutton {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  .signbutton:hover {
+    background-color: #f1f1f1;
   }
