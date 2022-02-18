@@ -14,3 +14,8 @@
     height:300px;
 
 }
+
+#grad1 {
+    background-color: rgb(163, 162, 162); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgb(243, 240, 240) , rgb(99, 99, 99));
+  }
