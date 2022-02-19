@@ -33,7 +33,8 @@
 
 .signbutton {
     background-color: #ddd;
-    border: none;
+    border: 2px;
+    border-color: #ff0054;
     color: black;
     padding: 10px 20px;
     text-align: center;
