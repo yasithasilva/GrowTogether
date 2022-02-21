@@ -2,33 +2,63 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
     margin-left: 440px;
+    margin-top:110px;
     line-height: 200%;
     position: absolute;
     top:700px;
     position:absolute;
 }
 
+.intro2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  margin-left: 440px;
+  margin-top:450px;
+  line-height: 200%;
+  position: absolute;
+  top:700px;
+  position:absolute;
+}
 .whoim{
     margin-top: 80px;
     margin-left: 80px;
     width:300px;
     height:300px; 
-
+}
+.whoim2{
+  margin-top: 200px;
+  margin-left: 80px;
+  width:300px;
+  height:300px; 
 }
 
 #grad1 {
     background-color: rgb(163, 162, 162); /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, rgb(243, 240, 240) , rgb(99, 99, 99));
+    height:200px;
+    
   }
+
+  #grad2 {
+    background-color: rgb(163, 162, 162); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgb(243, 240, 240) , rgb(99, 99, 99));
+    height: 500px;
+  }
+
 
 .volhead{
     position:absolute;
     z-index:99;
-    top:1500px;
+    top: 1460px;
     left:40px;
-    color:aliceblue;
+    color:rgb(255, 255, 255);
     line-height:150%;
     opacity:75%;
+  
+}
+.voltext{
+  line-height:30px;
+  color:rgb(214, 207, 207);
 }
 
 .signbutton {
