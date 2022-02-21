@@ -28,28 +28,75 @@
 		
 	</div>
 
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/volcvr1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/volcvr2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/cvr7.jpg" style="width:100%">
+        </div>
+        
+        </div>
+        
+        <div class="getfront" style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <script>
+           var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+        </script>
+
     <div>
-    <H1>
+        <br>
+    <center>
+    <H1 class="cont-headi">
         To reduce poverty, we need growth. <br> And to advance growth we need adequate And reliable energy.
     </H1>
-    <p>
+    <p class="para001">
         Maybe you’ve been feeling the urge to do something – but you aren’t sure what. Maybe you feel overwhelmed. Maybe 
         you wish that you could have a say in the policies and do something that impacts millions of people around the globe.
           Well, now you can.
  
         People all over the world engage in volunteerism for a great variety of reasons. Somehow, in the end, volunteerism makes
          a specific contribution by generating well-being for people and their communities.
-
+    </center>
     </p>
     </div>
     <div>
-        <h1>
+        <center>
+        <h1 class="cont-headi">
             Become a volunteer
         </h1>
         <h3>
             Raise your voice and show your energy
         </h3>
-        <p>
+        <p class="para001">
             With every hour of their time, Grow Together volunteers multiply their impact through the enormous power of 
             advocacy — whether it’s helping change policy to support millions of families putting food on the table or helping 
             raise billions of dollars for the world’s most vulnerable children.Volunteers are well-placed to support poverty 
@@ -58,6 +105,7 @@
         </p>
     </div>
     <div>
+    </center>
         <h1>
             As a volunteer you will:
         </h1>
