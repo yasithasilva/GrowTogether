@@ -67,7 +67,7 @@
   transition: 0.3s;
   width: 25%;
   margin-left: 6%;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: rgb(245, 245, 245);
   text-align: center;
 }
@@ -92,3 +92,40 @@
     
   color: rgb(78, 78, 78);
 }
+
+.cont-headi{
+  margin-top: 80px;
+  text-align: center;
+  color: rgb(209, 55, 55);
+  font-weight: bold;
+}
+
+.para001{
+  margin-top: 30px;
+  width: 1000px;
+  text-align: center;
+  color: rgb(99, 99, 99);
+  font-size: x-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ............. */
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #B90E0A;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px 5px;
+  margin-bottom: 5px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* .................. */
