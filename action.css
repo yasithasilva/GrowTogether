@@ -1,0 +1,26 @@
+h1 {
+    text-transform: uppercase;
+    line-height: 5.5em;
+    font-family: sans-serif;
+    font-size: 65px;
+    font: weight 500px; 
+}
+
+body {
+    line-height: 1.6em;
+    font-family: sans-serif;
+    margin:100px;
+}
+
+.box-a{
+    background-color: red;
+    
+    /*padding*/
+    padding: 25px;
+    
+}
+
+.box-a h2{
+ font-family:  sans-serif;
+ font-size: 30px;
+}
