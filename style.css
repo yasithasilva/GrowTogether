@@ -13,7 +13,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 22px;
   margin-left: 440px;
-  margin-top:450px;
+  margin-top:480px;
   line-height: 200%;
   position: absolute;
   top:700px;
@@ -26,7 +26,7 @@
     height:300px; 
 }
 .whoim2{
-  margin-top: 200px;
+  margin-top: 20px;
   margin-left: 80px;
   width:300px;
   height:300px; 
@@ -35,21 +35,22 @@
 #grad1 {
     background-color: rgb(163, 162, 162); /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, rgb(243, 240, 240) , rgb(99, 99, 99));
-    height:200px;
-    
+    height:400px;
+    margin-top: 0px;
   }
 
   #grad2 {
     background-color: rgb(163, 162, 162); /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, rgb(243, 240, 240) , rgb(99, 99, 99));
-    height: 500px;
+    background-image: linear-gradient(to right, ) , rgb(99, 99, 99),rgb(243, 240, 240);
+    height: 350px;
+    margin-top: 0px;
   }
 
 
 .volhead{
     position:absolute;
     z-index:99;
-    top: 1460px;
+    top: 1520px;
     left:40px;
     color:rgb(255, 255, 255);
     line-height:150%;
