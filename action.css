@@ -1,18 +1,25 @@
 h1 {
+    /* title*/
     text-transform: uppercase;
     line-height: 5.5em;
     font-family: sans-serif;
-    font-size: 65px;
+    font-size: 60px;
     font: weight 500px; 
 }
 
+
+h3{
+    font-size: 70px;
+}
 body {
+    /* edit body*/
     line-height: 1.6em;
     font-family: sans-serif;
     margin:100px;
 }
 
 .box-a{
+    /*targets in red color boxes*/
     background-color: red;
     
     /*padding*/
@@ -21,6 +28,26 @@ body {
 }
 
 .box-a h2{
+   /*text inside the red color box*/ 
  font-family:  sans-serif;
  font-size: 30px;
 }
+
+
+/*remove the underline of anchor tags*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*hover selector for select elements when the mouse move over the words*/
+a:hover{
+    color: tomato;
+}
+
+/*change color when click*/
+a:active{
+    color: navy;
+
+}
+
