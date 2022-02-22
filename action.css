@@ -60,3 +60,11 @@ a:active{
     margin-left: 3em;
     margin-right: 2em;
 }
+
+
+hr{
+    height:10px;
+    border width: 10px;
+    background color: black ;
+    weight: 10;
+}
