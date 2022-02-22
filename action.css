@@ -77,8 +77,8 @@ a:active{
 
 
 hr{
-    height:10px;
-    border-width: 10px;
-    background-color: black ;
+    height:0.5px;
+    border-width: 0.5px;
+    background-color:lightgray ;
     
 }
