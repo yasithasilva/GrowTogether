@@ -5,16 +5,83 @@
 
 <title> ACTIONS </title>
 
+<link rel="icon" href="images/icon.png" type="image/gif" size="16x16">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="slideshow.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="donations.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--link css file-->
 <link rel="stylesheet" href="action.css">
 </head>
 
 <body>
+	<div class="topnav">
+		
+		<img class="navimg"src="images/navimage.png" >
+		<a href="aboutus.html">ABOUT</a>
+		<a href="Contribution.html">CONTRIBUTION</a>
+		<a class="active" href="action.html">ACTION</a>
+		<a href="donations.html">DONATE</a>
+		<a href="volunteer.html">VOLUNTEER</a>
+		<a href="index.html">HOME</a>
+		
+	</div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/cvr1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/cvr2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/cvr3.jpg" style="width:100%">
+        </div>
+        
+        </div>
+        
+        <div class="getfront" style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <script>
+           var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+        </script>
+
+<!--End of navbar  and slideshow-->
 
 
 <h1> <center> <b> Take Actions to End Poverty </b> </center> </h1>
 
 <br>
-
+   <!--intro paragraph-->
 
 	<p> The fight against global poverty can be a discouraging one. The number of people suffering is hard to imagine.
 		While there is a multitude of poverty-stricken individuals, things are not entirely bleak.Poverty rates have been raising in recent years
@@ -42,10 +109,19 @@
 
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3> <center> The Targets </center> </h3>
 
-<h2> <center> The Targets </center> </h2>
+<br>
+<br>
+<br>
 
-
+<!--open div tag for targets named box . target titles are representing in a box-->
 	<div class="box-a">
 		<h2>Target 1.1  
 			<br><br>
@@ -128,7 +204,7 @@ areas</a>
 
 <br>
 <br>
-
+<br>
 <b>SDG INDICATOR 1.2.2 </b>
 
 <p>  Population in poverty according to national definitions </p>
@@ -178,8 +254,8 @@ newborns, work-injury victims and the poor and the vulnerable.</p>
 <p><b> Goal:</b> Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial 
 coverage of the poor and the vulnerable.</p>
 
+<b> Additional charts :</b>
 <br>
-<p><b> Additional charts :</b> </p>
 <a href="https://ourworldindata.org/grapher/adequacy-of-social-insurance-programs" target="_blank">Adequacy of social insurance systems</a> 
 <br>
 <a href="https://ourworldindata.org/grapher/adequacy-of-social-safety-net-programs" target="_blank">Adequacy of social safety net programs</a> 
