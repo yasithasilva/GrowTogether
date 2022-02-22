@@ -48,18 +48,22 @@
 
 
 .volhead{
-    position:absolute;
-    z-index:99;
-    top: 1520px;
-    left:40px;
+    position:relative;
+    z-index:100;
     color:rgb(255, 255, 255);
     line-height:150%;
-    opacity:75%;
-  
+    width:100%;
 }
 .voltext{
   line-height:30px;
   color:rgb(214, 207, 207);
+  
+}
+
+.adjvol{
+  left: 40px;
+  position:absolute;
+  top:20%;
 }
 
 .signbutton {
@@ -133,11 +137,12 @@
 
 .para001{
   margin-top: 30px;
-  width: 1000px;
-  text-align: center;
+  width: 100%;
+  text-align:center;
   color: rgb(99, 99, 99);
   font-size: x-large;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
 }
 
 /* ............. */
@@ -152,7 +157,8 @@
   cursor: pointer;
   width: 100%;
   border-radius: 5px 5px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .button:hover {

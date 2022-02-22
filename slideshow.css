@@ -52,3 +52,10 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+  /* put the bullets in front of images */
+  .getfront{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}

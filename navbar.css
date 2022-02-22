@@ -32,12 +32,7 @@
     color: white;
   }
 
-  /* put the bullets in front of images */
-.getfront{
-    position: absolute;
-    top: 680px;
-    left: 50%;
-}
+
 
 .navimg{
     height: 80px;
