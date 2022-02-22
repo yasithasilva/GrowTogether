@@ -1,9 +1,20 @@
 <html>
     <head>
+
+      <link rel="icon" href="images/icon.png" type="image/gif" size="16x16">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="slideshow.css">
+      <link rel="stylesheet" href="navbar.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="donations.css">
+      <link rel="stylesheet" href="footer.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <style>
         html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -12,7 +23,7 @@
 
 .column {
   float: left;
-  width: 30.0%;
+  width: 32.0%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -63,53 +74,135 @@
   p {
   font-size: 14px;
   }
+
+  #section1 {
+
+
+}
+
+#section2 {
+
+}
+#section3{
+
+}
+
 </style>
         <body>
-          <div class="row">
+
+          <div class="topnav">
+		
+            <img class="navimg"src="images/navimage.png" >
+            <a href="aboutus.html">ABOUT</a>
+            <a class="active" href="Contribution.html">CONTRIBUTION</a>
+            <a href="action.html">ACTION</a>
+            <a href="donations.html">DONATE</a>
+            <a href="volunteer.html">VOLUNTEER</a>
+            <a href="index.html">HOME</a>
+            
+          </div>
+        
+            <div class="slideshow-container">
+        
+                <div class="mySlides fade">
+                  <img src="images/cvr1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/cvr2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/cvr3.jpg" style="width:100%">
+                </div>
+                
+                </div>
+                
+                <div class="getfront" style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+        
+                <script>
+                   var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+                </script>
+        
+        <!--End of navbar  and slideshow-->
+
+        <center>
+          <div class="main" id="section4"></div>
+          <div class="row" >
             <div class="column">
               <div class="card">
-                <img src="Images/countries.jpg" alt="Countries" style="width:100%">
+             
+               <img src="C:\Users\Dinthi - PC\Documents\GitHub\GrowTogether\Images\countries.jpg" alt="Countries" style="width:100%">
                 <div class="container">
+             
                   <h2>Countries</h2>
                   <p class="title">Five Countries with the Best Poverty Reduction Programs.</p>
                   <p>Poverty reduction programs are an important component of the anti-poverty effort. 
               Countries must be able to work together and learn from each other.
               </p>
-                  <p>These are the five countries having some of the strongest poverty-reduction programs, in no particular order. 
+                  <p>These are the five countries having some of the strongest poverty-reduction programs, in no particular order.<br><br> 
               The list is prepared with the help of the U.N.</p>
-                  <p><button class="button">Read More</button></p>
+              
+                  <p><button class="button"> <a href="#section1">Read More</a></button></p>
+              </div>
                 </div>
               </div>
-            </div>
           
-            <div class="column">
-              <div class="card">
-                <img src="Images/business.jpg" alt="Business" style="width:100%">
-                <div class="container">
-                  <h2>Business</h2>
-                  <p class="title">Business for 2030.</p>
-              <p>They try to cover these two target using their business.<p>
-                  <p>1.1) By 2030, Eradicate extreme poverty for all people everywhere, currenty measured as people living on less than $1.25 a day.<br/>
-              1.2) By 2030, Reduce at least by half the proportion of men, 
-              women and children of all ages living in poverty in all its dimensions according to national definition.</p>
-                  <p><button class="button">Read More</button></p>
+              <div class="column">
+                <div class="card">
+                  <img src="C:\Users\Dinthi - PC\Documents\GitHub\GrowTogether\Images\business.jpg" alt="Business" style="width:100%">
+                  <div class="container">
+                    <h2>Business</h2>
+                    <p class="title">Business for 2030.</p>
+                <p>They try to cover these two target using their business.<p>
+                    <p>1.1) By 2030, Eradicate extreme poverty for all people everywhere, currenty measured as people living on less than $1.25 a day.<br/><br>
+                   1.2) By 2030, Reduce at least by half the proportion of men, 
+                women and children of all ages living in poverty in all its dimensions according to national definition.</p>
+                
+                    <p><button class="button"><a href="#section2">Read More</a></button></p>
                 </div>
-              </div>
-            </div>
+                  </div>
+                </div>
             
-            <div class="column">
-              <div class="card">
-                <img src="Images/organizations.jpg" alt="Organizations" style="width:100%">
-                <div class="container">
-                  <h2>Organizations.</h2>
-                  <p class="title"></p>
-                  <p></p>
-                  <p></p>
-                  <p><button class="button">Read More</button></p>
+                <div class="column">
+                  <div class="card">
+                    <img src="C:\Users\Dinthi - PC\Documents\GitHub\GrowTogether\Images\organizations.jpg" alt="Organizations" style="width:100%">
+                    <div class="container">
+                      <h2>Organizations.</h2>
+                      <p class="title"></p>
+                      <p></p>
+                      <p></p>
+                  
+                      <p><button class="button"><a href="#section3">Read More</a></button></p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
+              </div> </center>
+
+
+          <div class="main" id="section1">    
           <h1>Countries</h1>
           <h2>China.</h2>
           <p>China has aided in the reduction of world poverty by  <a href="https://www.un.org/development/desa/dspd/wp-content/uploads/sites/22/2018/05/31.pdf" target="_blank"> more than 70%.</a>
@@ -140,8 +233,10 @@
                       <p><b>It is important to note that none of these countries are fully free of poverty, 
                         but they do present some excellent examples of how governments might address the problem. 
                         With the support of organizations like USAID, it's evident that this is a problem that many people are concerned about.</b></p>
-          
-                     <h1>Business</h1>
+                      </div>
+
+            <div class="main" id="section2">
+            <h1>Business</h1>
             <h2>CROPLIFE INTERNATIONAL</h2>
             <p>CropLife International has trained over 4 million farmers in effective agricultural techniques since 2005, 
               helping to enhance crop yields and revenue while reducing poverty.
@@ -158,26 +253,19 @@
                This endeavor is in addition to DuPont's ongoing efforts to improve the lives of hundreds of millions of farmers.</p>
 
                <h2>MasterCard</h2>
-               <p>Through 500 programs in more than 50 countries, MasterCard, 
-                in collaboration with financial institutions, merchants, telecommunications companies, 
-                governments, and non-governmental organizations, has helped make the financial system 
-                more accessible to more than 300 million people who were previously excluded. And it's only the beginning for them.
-                 By 2020, they plan to connect 500 million individuals to the formal economy, including 40 million micro and small businesses, 
-                 offering people a crucial tool to assist them escape poverty.</p>
+               <p>Over 300 million people now have access to the financial system thanks to MasterCard.
+                  They hope to connect 500 million people to the formal economy by 2020. 
+                  As part of this project, 40 million micro and small enterprises will be connected to the MasterCard network by 2020.</p>
 
-                 <p>MasterCard is collaborating with nations such as Nigeria and Egypt to link a government identity with payments, 
-                  allowing people to become financially engaged on a large scale.</p>
+                 <p>MasterCard, the world's largest credit card network,
+                    is assisting consumers in underdeveloped countries in becoming more financially active. 
+                    It also aids in the distribution of government benefits through the use of electronic payment cards.</p>
 
-                  <p>MasterCard also collaborates with governments to assist in the distribution of social benefits via electronic payment cards. 
-                    For example, the business collaborated with the South African Social Security Agency to distribute government monies on 10 million biometric debit cards.
-                    For the first time, five million of the 16 million South Africans receiving government handouts have access to a legitimate financial tool.</p>
-                  
-                  <p>The company has also collaborated with the Rwandan government to expedite the country's transition to financial inclusion for 90% of its inhabitants.
-                    MasterCard collaborated with the International Finance Corporation (IFC), a World Bank Group member, 
-                    to expand the use of electronic payments by micro, small, and medium businesses. 
-                    MasterCard has launched Masterpass QR in eight countries, a solution that allows millions of SMEs to accept rapid and secure payments 
-                    while also empowering consumers to buy goods and services without using cash. In addition, the company collaborated with bKash to enable 
-                    Bangladeshis to send and receive remittances using mobile phones.</p>  
+              
+                  <p>Masterpass QR, a solution that allows millions of SMEs to accept fast and secure payments,
+                     has been launched in eight countries by MasterCard. 
+                     Bangladeshis can now send and receive remittances via their mobile phones thanks to a partnership between the company and bKash. 
+                     It also collaborated with Rwanda's government to help the country move closer to financial inclusion.</p>  
 
                     <h2>QUALCOMM</h2>
                     <p>Qualcomm supports to the Fishing with Mobile Nets project in Colombia, 
@@ -188,7 +276,9 @@
                       to assist mobile education, better business practices, and economic development. Between 2015 and 2017, 
                       the use of mobile technology resulted in a 17 percent rise in average monthly income among project participants. 
                       Along Colombia's coasts and rivers, the program has expanded to 13 traditional fishing communities.</p>
+                    </div>
 
+                      <div class="main" id="section3">
                       <h1>Organizations</h1>
                       <h2><a href="https://www.oxfam.org/en" target="_blank">Oxfam International</a></h2>
                       <p>They raced against the clock in India to protect the most vulnerable from COVID-19.<br/>
@@ -253,7 +343,41 @@
                           <p>Since its founding in 2002, IPA has produced and tested over 550 solutions to poverty-related concerns. 
                           IPA has collaborated with over 600 researchers to undertake over 830 evaluations in 51 countries since its inception.
                           It has resulted in the creation of successful programs that have a global impact on millions of people.</p>
-                      
+                        </div>
+
+
+                          <!--Footer starts here-->
+  <footer>
+    <div class="footer-content">
+        <h3 class="foottext">Gather With Grow Together</h3>
+        <p>There are tons of people all around the world, suffering from poverty day by day.Therefore,
+          here is the unite of the Non-Government Organizations, Volunteers and all the warm-hearted
+          people who raise hands to Grow Together."Grow Together" is the cloud-based platform of all
+          these people.</p>
+        <ul class="socials">
+            <li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="www.plus.google.lk"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="www.linkedin.microsoft.com"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy; <a href="#">GrowTogether</a>  </p>
+                <div class="footer-menu">
+                  <ul class="f-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="action.html">Action</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donations.html">Donate</a></li>
+                    <li><a href="aboutus.html">Contact Us</a></li>
+                  </ul>
+                </div>
+    </div>
+
+</footer>
+<!--Footer ends here-->
+
         </body>
     </head>
 </html>
