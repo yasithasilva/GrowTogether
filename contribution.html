@@ -12,7 +12,97 @@
 
   <style>
 
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+<!--Slideshow CSS code end here-->
 
 
 p {
@@ -247,46 +337,82 @@ p {
           
 
             <div class="main" id="section2">
-            <h1>Business</h1>
-            <h2>CROPLIFE INTERNATIONAL</h2>
-            <p>CropLife International has trained over 4 million farmers in effective agricultural techniques since 2005, 
-              helping to enhance crop yields and revenue while reducing poverty.
-               Here's an example of a project in Honduras that's working to bring 108,000 rural Hondurans out of poverty, in collaboration with USAID. 
-               These training activities aid in the definition of best practices, which are then replicated by the training activities of our member companies, 
-               which reached over 20 million farmers in 2018.</p>
-
-            <h2>DUPONT</h2>
-            <p>By the end of 2020, DuPont hopes to improve the lives of at least three million farmers and their rural communities. 
-              Over 347,000 farmers were directly impacted by DuPont in 2013 to assist them enhance their success and strengthen their agricultural systems. 
-              A cooperation between the Ethiopian government and the United States Agency for 
-              International Development (USAID) to boost maize yield and income through agronomic training,
-               improved inputs, and increased access to loans, markets, and grain storage is one example. 
-               This endeavor is in addition to DuPont's ongoing efforts to improve the lives of hundreds of millions of farmers.</p>
-
-               <h2>MasterCard</h2>
-               <p>Over 300 million people now have access to the financial system thanks to MasterCard.
-                  They hope to connect 500 million people to the formal economy by 2020. 
-                  As part of this project, 40 million micro and small enterprises will be connected to the MasterCard network by 2020.</p>
-
-                 <p>MasterCard, the world's largest credit card network,
-                    is assisting consumers in underdeveloped countries in becoming more financially active. 
-                    It also aids in the distribution of government benefits through the use of electronic payment cards.</p>
-
+              <center>
+                <h2 class="head3">BUSINESS</h2>
+            <p class="para01"> We call these companies "BUSINESS FOR 2030" why because these companies are targeted at 2030.
+              They hpoe to help as many people as possible affected.
+              Not only these businesses but many more businesses have been started based on 2030 to cover all Sustainability goals.</p>
               
-                  <p>Masterpass QR, a solution that allows millions of SMEs to accept fast and secure payments,
-                     has been launched in eight countries by MasterCard. 
-                     Bangladeshis can now send and receive remittances via their mobile phones thanks to a partnership between the company and bKash. 
-                     It also collaborated with Rwanda's government to help the country move closer to financial inclusion.</p>  
+              </center>
+              <br>
+              <br>
+              <div class="slideshow-container">
 
-                    <h2>QUALCOMM</h2>
-                    <p>Qualcomm supports to the Fishing with Mobile Nets project in Colombia, 
-                      an initiative that uses modern wireless technology, digital content, 
-                      and a virtual community platform to help traditional fishermen, women, 
-                      and children in vulnerable fishing villages improve economically and socially. 
-                      Participants will receive 3G or 4G LTE-connected tablets and smartphones, as well as specialized software and training, 
-                      to assist mobile education, better business practices, and economic development. Between 2015 and 2017, 
-                      the use of mobile technology resulted in a 17 percent rise in average monthly income among project participants. 
-                      Along Colombia's coasts and rivers, the program has expanded to 13 traditional fishing communities.</p>
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="Images/cont/cropl.jpg" style="width:100%">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="Images/cont/dupon.jpg" style="width:100%">
+                 
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="Images/cont/master.jpg" style="width:100%">
+                 
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="Images/cont/qualcomm.jpg" style="width:100%">
+                 
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+                
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+                
                     </div>
 
                       <div class="main" id="section3">
