@@ -12,110 +12,12 @@
 
   <style>
 
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
 
 
+</style>
+</head>
 
-/* Number text (1/4 etc) */
-.numbertext {
-  color: #000000;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-
-<!--Slideshow CSS code end here-->
-
-
-p {
-  font-size: 14px;
-}
-
-
-
-  </style>
-
-
-
-        <body>
+<body>
 
           <div class="topnav">
 		
@@ -128,57 +30,36 @@ p {
             <a href="index.html">HOME</a>
             
           </div>
+
+    <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/cvr4.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/cvr6.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/cvr8.jpg" style="width:100%">
+            </div>
+            
+            <div class="getfront" style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+      </div>
         
-            <div class="slideshow-container">
-        
-                <div class="mySlides fade">
-                  <img src="images/cvr4.jpg" style="width:100%">
-                </div>
-                
-                <div class="mySlides fade">
-                  <img src="images/cvr6.jpg" style="width:100%">
-                </div>
-                
-                <div class="mySlides fade">
-                  <img src="images/cvr8.jpg" style="width:100%">
-                </div>
-                
-                </div>
-                
-                <div class="getfront" style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span> 
-                  <span class="dot" onclick="currentSlide(3)"></span> 
-                </div>
-        
-                <script>
-                   var slideIndex = 0;
-          showSlides();
-          
-          function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-          }
-                </script>
+            
         
         <!--End of navbar  and slideshow-->
 
 
-        <br/>
-        <br/>
-        <br/>
+        <br>
+        <br>
+        <br>
 
 
         <h2 class="cont-headi">Why is it important to reduce poverty?</h2>
@@ -190,7 +71,9 @@ p {
            Poverty is linked to an increased risk of heart disease, diabetes, hypertension, cancer, 
            infant mortality, mental illness, undernutrition, lead poisoning, asthma, and dental issues, among other things.</p>
            
-          <p class="para001"> So in this section we hope to give you an understanding of the measures taken for poverty reduction in three main sections.</p>
+          <p class="para001"> So in this section we hope to give you an understanding of the measures taken for 
+            poverty reduction in three main sections.
+          </p>
           
        
 
@@ -198,33 +81,29 @@ p {
           <div class="card">
               <img class="card-img" src="Images/countries.jpg" alt="Avatar" style="width:100%">
               <div class="container">
-                <h4 class="card-title">COUNTRIES</h4> 
-                <p class="crd-p">Five Countries with the Best Poverty Reduction Programs.</p>
-                <p>Poverty reduction programs are an important component of the anti-poverty effort. 
+                <h4 class="card1-title">COUNTRIES</h4> 
+                <p class="crd1-p"><B>Five Countries with the Best Poverty Reduction Programs.</B></p>
+                <p class="crd1-p">Poverty reduction programs are an important component of the anti-poverty effort. 
             Countries must be able to work together and learn from each other.
             
                These are the five countries having some of the strongest poverty-reduction programs, in no particular order.<br><br> 
             The list is prepared with the help of the U.N.
-      <p><button class="button"> <a href="#section1">Read More</a></button></p>
-      </div>
+      <button class="button"> <a href="#section1">Read More</a></button>
+              </div>
           </div>
-
-
-
-
 
 
           <div class="card">
             <img class="card-img" src="Images/business.jpg" alt="Avatar" style="width:100%">
             <div class="container">
-              <h4 class="card-title">Business</h4> 
-              <p class="crd-p">Business for 2030.</p>
-            <p>They try to cover these two target using their business.<p>
-                <p>1.1) By 2030, Eradicate extreme poverty for all people everywhere, currenty measured as people living on less than $1.25 a day.<br/>
+              <h4 class="card1-title">BUSINESSES</h4> 
+              <p class="crd1-p"><b>Business for 2030.</B></p>
+            <p class="crd1-p">They try to cover these two target using their business.</p>
+                <p class="crd1-p">1.1) By 2030, Eradicate extreme poverty for all people everywhere, currenty measured as people living on less than $1.25 a day.<br/>
                1.2) By 2030, Reduce at least by half the proportion of men, 
             women and children of all ages living in poverty in all its dimensions according to national definition.</p>
-             <p><button class="button"> <a href="#section2">Read More</a></button></p>
-     </div>
+            <button class="button" style="margin-top: 65px;"> <a href="#section2">Read More</a></button>
+            </div>
         </div>
 
           
@@ -234,22 +113,23 @@ p {
         <div class="card">
           <img class="card-img" src="Images/organizations.jpg" alt="Avatar" style="width:100%">
           <div class="container">
-            <h4 class="card-title">Organizations</h4> 
-            <p class="crd-p">Organizations Dedicated to Fight Poverty</p><br>
+            <h4 class="card1-title">ORGANIZATIONS</h4> 
+            <p class="crd1-p"><b>Dedicated to Fight Poverty</b> </p><br>
 				  <p>Many nonprofits, charities, and NGOs worldwide are committed to reducing poverty.
 				  They are taking different approaches that create tangible, long-lasting solutions to reduce poverty.<br><br>
 				  Organizations like these have the ability to create a ripple effect in the lives and communities of those who truly need it.</p>
-				  
-            
-    <p><button class="button"> <a href="#section3">Read More</a></button></p>
-    </div>
+				         
+    <button class="button"> <a href="#section3">Read More</a></button>
+    
+  </div>
       </div>
   </div>
 
 
   <div class="main" id="section1">
+
     <center>
-    <h2 class="head3">Countries</h2>
+    <h2 class="cont-headi">Countries</h2>
     
     <p class="para01">South Sudan,Equatorial Guinea,
     Madagascar,
@@ -260,17 +140,19 @@ p {
     Democratic Republic of the Congo,Central African Republic,
     Guatemala, according to world bank these are the top most poverty rates countries.
     But other side china, denmark, canada, u.s these 5 countries have the best poverty reduction programes.</p>
+    
     <p class="para01"><b> And also it is important to note that none of these countries are fully free of poverty, 
      but they do present some excellent examples of how governments might address the problem.
      With the support of organizations like USAID, it's evident that this is a problem that many people are concerned about.</b></p>
     </center>
+    <br><br>
     
     <div class="card-cont">
                 <div class="card">
                     <img class="card-img" src="Images/cont/china.jpg" alt="Avatar" style="width:100%">
                     <div class="container">
-                      <h4 class="card-title">China</h4> 
-                      <p>China has aided in the reduction of world poverty by <a href="https://www.un.org/development/desa/dspd/wp-content/uploads/sites/22/2018/05/31.pdf" target="_blank">more than 70%.</a> 
+                      <h4 class="card1-title">China</h4> 
+                      <p class="crd1-p">China has aided in the reduction of world poverty by <a href="https://www.un.org/development/desa/dspd/wp-content/uploads/sites/22/2018/05/31.pdf" target="_blank">more than 70%.</a> 
     Between 1981 and 2013, China raised a total of 850 million people out of poverty.
      In China, the fraction of individuals living on less than $1.90 has decreased from 88 percent to less than 2% in 32 years.</p>
      </div>
@@ -281,8 +163,8 @@ p {
                 <div class="card">
                     <img class="card-img" src="Images/cont/brazil.jpg" alt="Avatar" style="width:100%">
                     <div class="container">
-                      <h4 class="card-title">Brazil</h4> 
-                      <p>Brazil has made significant progress in eliminating poverty and income disparities.
+                      <h4 class="card1-title">Brazil</h4> 
+                      <p class="crd1-p" style="margin-bottom: 20px;">Brazil has made significant progress in eliminating poverty and income disparities.
      According to researchers, the <a href="https://www.un.org/development/desa/dspd/wp-content/uploads/sites/22/2017/04/Nat%C3%A1lia-S%C3%A1tyro-UN_SDG-May-2017.pdf" target="_blank"> Family Grant Program </a> has considerably reduced income gap and poverty by ensuring that more children attend school. 
      The Continuous Cash Benefit is a type of income transfer that is specifically designed for the elderly and disabled.</p>
      </div>
@@ -292,8 +174,8 @@ p {
                 <div class="card">
                     <img class="card-img" src="Images/cont/canada.jpg" alt="Avatar" style="width:100%">
                     <div class="container">
-                      <h4 class="card-title">Canada</h4> 
-                      <p>In 2017, Canada's poverty-reduction programs aided over 2 million people.
+                      <h4 class="card1-title">Canada</h4> 
+                      <p class="crd1-p">In 2017, Canada's poverty-reduction programs aided over 2 million people.
      According to reports, Canada aims to eliminate poverty in half by 2030.
      <a href="https://www.canadianliving.com/life-and-relationships/community-and-current-events/article/5-government-programs-that-help-people-living-below-the-poverty-line" target="_blank">The National Housing Strategy</a> is a housing investment strategy that aims to assist the elderly, 
      persons fleeing domestic abuse, and Indigenous people.</p>
@@ -305,8 +187,8 @@ p {
                 <div class="card">
                     <img class="card-img" src="Images/cont/usa.jpg" alt="Avatar" style="width:100%">
                     <div class="container">
-                      <h4 class="card-title">United States.</h4> 
-                      <p>Social Security could help reduce poverty among the elderly by 75 percent.
+                      <h4 class="card1-title">United States.</h4> 
+                      <p class="crd1-p">Social Security could help reduce poverty among the elderly by 75 percent.
      The Earned Income Tax Credit is beneficial for families earning approximately 150 percent of the poverty line, 
      or approximately $25,100 for a four-person family. Food stamps and other <a href="https://www.latimes.com/business/hiltzik/la-fi-hiltzik-antipoverty-20180507-story.html" target="_blank">programs </a> have also helped to reduce deep poverty.</p>
      </div>
@@ -316,8 +198,8 @@ p {
      <div class="card">
                     <img class="card-img" src="Images/cont/denmark.jpg" alt="Avatar" style="width:100%">
                     <div class="container">
-                      <h4 class="card-title">United States.</h4> 
-                      <p>Unemployed people, disabled people, and the elderly are among those who benefit from Denmark's <a href="https://www.britannica.com/place/Denmark/Health-and-welfare" target="_blank">social welfare system.</a> 
+                      <h4 class="card1-title">United States.</h4> 
+                      <p class="crd1-p">Unemployed people, disabled people, and the elderly are among those who benefit from Denmark's <a href="https://www.britannica.com/place/Denmark/Health-and-welfare" target="_blank">social welfare system.</a> 
      Denmark's citizens are typically healthy, with low infant mortality rates.
      Denmark likewise provides free public education, and the majority of its adult population is literate.</p>
      
@@ -326,26 +208,15 @@ p {
     </div> 
      
      <br>
-     <br>
-     <br>
+
      
      
     
     </div>
 
-
-
-
-      
-          
-
-
-                      
-          
-
-            <div class="main" id="section2">
+      <div class="main" id="section2">
               <center>
-                <h2 class="head3">BUSINESS</h2>
+                <h2 class="cont-headi">BUSINESS</h2>
             <p class="para01"> We call these companies "BUSINESS FOR 2030" why because these companies are targeted at 2030.
               They hpoe to help as many people as possible affected.
               Not only these businesses but many more businesses have been started based on 2030 to cover all Sustainability goals.</p>
@@ -353,90 +224,60 @@ p {
               </center>
               <br>
               <br>
-              <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                  <div class="numbertext">1 / 4</div>
+              <br><br><br>
+          <div>
                   <img src="Images/cont/cropl.jpg" style="width:100%">
-                  
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 4</div>
+                  <hr class="hr1">
                   <img src="Images/cont/dupon.jpg" style="width:100%">
-                 
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 4</div>
-                  <img src="Images/cont/master.jpg" style="width:100%">
-                 
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">4 / 4</div>
+                  <hr class="hr1">
                   <img src="Images/cont/qualcomm.jpg" style="width:100%">
-                 
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                
-                </div>
+                  <hr class="hr1">
+                  <img src="Images/cont/master.jpg" style="width:100%">
+
+          </div>
+
                 <br>
                 
-                <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span> 
-                  <span class="dot" onclick="currentSlide(3)"></span> 
-                  <span class="dot" onclick="currentSlide(4)"></span> 
-                </div>
-                
                 <script>
-                var slideIndex = 1;
-                showSlides(slideIndex);
+                var slideIndex = 0;
+                showSlides();
                 
-                function plusSlides(n) {
-                  showSlides(slideIndex += n);
-                }
-                
-                function currentSlide(n) {
-                  showSlides(slideIndex = n);
-                }
-                
-                function showSlides(n) {
+                function showSlides() {
                   var i;
                   var slides = document.getElementsByClassName("mySlides");
                   var dots = document.getElementsByClassName("dot");
-                  if (n > slides.length) {slideIndex = 1}    
-                  if (n < 1) {slideIndex = slides.length}
                   for (i = 0; i < slides.length; i++) {
-                      slides[i].style.display = "none";  
+                    slides[i].style.display = "none";  
                   }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
                   for (i = 0; i < dots.length; i++) {
-                      dots[i].className = dots[i].className.replace(" active", "");
+                    dots[i].className = dots[i].className.replace(" active", "");
                   }
                   slides[slideIndex-1].style.display = "block";  
                   dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
                 }
+
                 </script>
-                
-                    </div>
+  
 
                       <div class="main" id="section3">
                         <center>
-                      <h2 class="head3">Organizations</h2>
+                      <h2 class="cont-headi">Organizations</h2>
                       <p class="para01">These 5 Organizations have been providing assistance through various projects to countries facing poverty in the world for many years.
                         It also works to improve the health of those countries.It also provides them with the educational knowledge they need for their development.
                         They support many sustainability development goals,not just poverty.</p>
                         
                       </center>
+                      <br><br>
                       <div class="card-cont">
                         <div class="card">
                   <a href="https://www.oxfam.org/en" target="_blank">
                             <img class="card-img" src="Images/cont/oxfam.jpg" alt="Avatar" style="width:100%"></a>
                             <div class="container">
-                              <h4 class="card-title">Oxfam International.</h4> 
-                              <p>They raced against the clock in India to protect the most vulnerable from COVID-19.
+                              <h4 class="card1-title">Oxfam International.</h4> 
+                              <p class="crd1-p" style="margin-bottom: 20px;">They raced against the clock in India to protect the most vulnerable from COVID-19.
              They worked tirelessly in Yemen to help those who were most affected.
              They assisted Palestinians in Gaza in rebuilding and recovering from the bloodshed.
              They assisted Palestinians in Gaza in rebuilding and recovering from the bloodshed.
@@ -445,22 +286,19 @@ p {
              They preserved females' schooling in South Sudan from the pandemic's effects.
              They provided cash help and subsidies to start companies to families in Iraq.
              In Vanuatu, blockchain technology was used to transform humanitarian relief.
-             They planted the seeds of climate resistance in the Philippines.
-             They assisted farmers in Burkina Faso in growing food in a hot and dry area.
-             They discovered labor exploitation in coffee farms in Brazil.
-             They marched for climate justice in Glasgow and other cities around the world.</p>
+             They planted the seeds of climate resistance in the Philippines. <br>
+             </p>
              </div>
             </div>
-             
-             
+              
              
              <div class="card">
               
                   <a href="https://www.opadint.org/" target="_blank">
                             <img class="card-img" src="Images/cont/opad.jpg" alt="Avatar" style="width:100%"></a>
                             <div class="container">
-                              <h4 class="card-title">The Organization for Poverty Alleviation and Development.</h4> 
-                              <p>Kenya is a country where improve the communal campaign against violence against women by providing a comprehensive response and innovative techniques.<br/>
+                              <h4 class="card1-title">The Organization for Poverty Alleviation and Development.</h4> 
+                              <p class="crd1-p">Kenya is a country where improve the communal campaign against violence against women by providing a comprehensive response and innovative techniques.<br/>
              Uganda is a country where Children and Displaced People's Welfare Program<br/>
              Climate Change Interventions in Kenya<br/>
              Drought-related poverty in Zambia need food assistance.<br/>
@@ -477,8 +315,8 @@ p {
                   <a href="https://www.concern.net/" target="_blank">
                             <img class="card-img" src="Images/cont/concern.jpg" alt="Avatar" style="width:100%"></a>
                             <div class="container">
-                              <h4 class="card-title">Concern WorldWide.</h4> 
-                               <p>Concern Worldwide is a non-profit humanitarian organization based in the United Kingdom. 
+                              <h4 class="card1-title">Concern WorldWide.</h4> 
+                               <p class="crd1-p">Concern Worldwide is a non-profit humanitarian organization based in the United Kingdom. 
              It supports the world's poorest people and intervenes in the world's poorest countries. 
              Its staff consists of 3,000 specialists from 50 countries who work with 25 million poor people each year.</p>
              <p>Concern Worldwide reaches out to and assists the most vulnerable communities in the world, 
@@ -494,8 +332,8 @@ p {
                   <a href="https://www.globalcitizen.org/en/campaign/defeat-poverty/" target="_blank">
                             <img class="card-img" src="Images/cont/global.jpg" alt="Avatar" style="width:100%"></a>
                             <div class="container">
-                              <h4 class="card-title">Global Citizen.</h4> 
-                              <p>Global Citizen is a non-profit organization that works to alleviate severe poverty around the world. New York is the organization's headquarters, 
+                              <h4 class="card1-title">Global Citizen.</h4> 
+                              <p class="crd1-p">Global Citizen is a non-profit organization that works to alleviate severe poverty around the world. New York is the organization's headquarters, 
              with offices in Canada, Australia, South Africa, Germany, and the United Kingdom. 
              It is a grassroots movement with the goal of eradicating extreme poverty by 2030.</p>
              <p>The Global Citizen platform gives people the skills and knowledge they need to understand the root causes of severe poverty and take action to address them.
@@ -511,12 +349,12 @@ p {
                   <a href="https://www.poverty-action.org/" target="_blank">
                             <img class="card-img" src="Images/cont/ipa.jpg" alt="Avatar" style="width:100%"></a>
                             <div class="container">
-                              <h4 class="card-title">Innovations for Poverty Action.</h4> 
-                              <p>Innovations for Poverty Action (IPA) is a non-profit organization that conducts research and advocates for effective solutions to global poverty issues. 
+                              <h4 class="card1-title">Innovations for Poverty Action.</h4> 
+                              <p class="crd1-p">Innovations for Poverty Action (IPA) is a non-profit organization that conducts research and advocates for effective solutions to global poverty issues. 
              It brings together scholars and decision-makers to assess and implement these solutions in order to better the lives of the underprivileged.</p>
              <p>Since its founding in 2002, IPA has produced and tested over 550 solutions to poverty-related concerns. 
              IPA has collaborated with over 600 researchers to undertake over 830 evaluations in 51 countries since its inception.
-             It has resulted in the creation of successful programs that have a global impact on millions of people.</p>p>
+             It has resulted in the creation of successful programs that have a global impact on millions of people.</p>
              </div>
             </div>
             </div> 
