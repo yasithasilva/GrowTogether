@@ -2,41 +2,229 @@
 <html>
 
 <head>
-    <title>About us</title>
-
-    <style>
-        h1 {
-             text-align: center;
-            font-size: 50px;
-        }
-
-        h3  {
-            text-align: center;
-        }
-    </style>
-
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="aboutus.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="icon" href="images/icon.png" type="image/gif" size="16x16">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="donations.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
-
 <body>
+    <div class="topnav">
 
-    <h1>What we believe</h1>
+        <img class="navimg" src="images/navimage.png">
+        <a class="active" href="aboutus.html">ABOUT</a>
+        <a href="Contribution.html">CONTRIBUTION</a>
+        <a href="action.html">ACTION</a>
+        <a href="donations.html">DONATE</a>
+        <a href="volunteer.html">VOLUNTEER</a>
+        <a href="index.html">HOME</a>
 
-    <p> Our vision is for a just and sustainable world. We are pursuing on achieving the goal <b>‘No Poverty’</b> 
-        to build a world where people and the environment are at the heart of just economies. A world free of 
-        gender-based violence and discrimination for women and girls. When the climate crisis is contained and
-        inclusive and accountable governance structures are in place, those in positions of power can be held accountable.</p>
+    </div>
 
-    <h1>More about us and what we do</h1>
+    <div class="slideshow-container">
 
-    <p> We started our organization in 2017 based on the 1st SDG goal of the 17 SDG goals adopted by the United Nations in 2015.
-        We are currently working on achieving the goal by donating and volunteering and we’re focusing not only one area, 
-        we’re planning on targeting countries worldwide. We work with thousands of partners and allies across 70 countries 
-        to help communities develop better lives for themselves, build resilience, and protect lives and livelihoods even 
-        in times of catastrophe. We combat inequities that keep people trapped in poverty and injustice - and work for meaningful, 
-        long-term change - because we seek long-term answers.</p>
-    
+        <div class="mySlides fade">
+            <img src="images/cvr1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/cvr2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/cvr3.jpg" style="width:100%">
+        </div>
+
+    </div>
+
+    <div class="getfront" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!--End of navbar  and slideshow-->
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>What we believe</h1>
+                </div>
+                <div class="content">
+                    <h3>Say bye to poverty !</h3>
+                    <!--First paragraph starts here-->
+                    <p>Our vision is for a just and sustainable world. We are pursuing on achieving the goal ‘No
+                        Poverty’ to build
+                        a world where people and the environment are at the heart of just economies. A world free of
+                        gender-based
+                        violence and discrimination for women and girls. When the climate crisis is contained and
+                        inclusive and
+                        accountable governance structures are in place, those in positions of power can be held
+                        accountable.</p>
+                    <br><br>
+                    <!--First paragraph ends here-->
+                    <div class="button">
+                        <a href="https://www.globalgoals.org/take-action/">Read More</a>
+                    </div>
+                </div><br><br>
+                <hr><br>
+
+                <div class="title">
+                    <h1>More about us</h1>
+                </div>
+                <div class="content">
+                    <h3>What is Grow Together & Who are we ? </h3>
+                    <!--Second paragraph starts here-->
+                    <p>We started our organization in 2017 based on the 1st SDG goal of the 17 SDG goals adopted by the
+                        United
+                        Nations in <b>2015</b>. We are currently working on achieving the goal by donating and
+                        volunteering and
+                        we’re
+                        focusing not only one area, we’re planning on targeting countries worldwide. We work with
+                        thousands of
+                        partners and allies across <b> 70 countries</b> to help communities develop better lives for
+                        themselves,
+                        build
+                        resilience, and protect lives and livelihoods even in times of catastrophe. We combat inequities
+                        that keep
+                        people trapped in poverty and injustice - and work for meaningful, long-term change - because we
+                        seek
+                        long-term answers.
+                    <p>
+                        <!--Second paragraph ends here-->
+                </div>
+                <br><br>
+
+                <div class="team">
+                    <h1 class="tm"> Our strength</h1>
+                    <img class="p1" src="images/Yasitha.jpg" alt="member1">
+                    <div class="img1">
+                        <p>Yasitha Silva</p>
+                    </div>
+                    <img class="p2" src="images/Jeewaka.jpeg" alt="member2">
+                    <div class="img2">
+                        <p>Jeewaka Dias</p>
+                    </div>
+                    <img class="p3" src="images/dinithi.jpg" alt="member3">
+                    <div class="img3">
+                        <p>Dinithi Shamen</p>
+                    </div>
+                    <img class="p4" src="images/ahinsa.jpg" alt="member4">
+                    <div class="img4">
+                        <p>Ahinsa Dedunu</p>
+                    </div>
+                    <img class="p5" src="images/Michelle.jpg" alt="member5">
+                    <div class="img5">
+                        <p>Michelle Marian</p>
+                    </div>
+                    <br><br>
+                    <p class="contact">So what are you waiting for ? Hurry up and contact us for more details !</p>
+                </div><br>
+
+
+                <div class="contact-info">
+                    <div class="card">
+                        <i class="card-icon far fa-envelope"></i>
+                        <p>growtogether@gmail.com</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="card-icon fas fa-phone"></i>
+                        <p>+9411-123 456 789</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="card-icon fas fa-map-marker-alt"></i>
+                        <p>Colombo,Sri Lanka</p>
+                    </div>
+                </div><br>
+
+
+
+            </div>
+            <div class="container1">
+                <div class="contact-box">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2>Contact Us</h2>
+                        <input type="text" class="field" placeholder="Your Name">
+                        <input type="text" class="field" placeholder="Your Email">
+                        <input type="text" class="field" placeholder="Phone">
+                        <textarea placeholder="Message" class="field"></textarea>
+                        <button class="btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer starts here-->
+    <footer>
+        <div class="footer-content">
+            <h3 class="foottext">Gather With Grow Together</h3>
+            <p>There are tons of people all around the world, suffering from poverty day by day.Therefore,
+                here is the unite of the Non-Government Organizations, Volunteers and all the warm-hearted
+                people who raise hands to Grow Together."Grow Together" is the cloud-based platform of all
+                these people.</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.plus.google.lk"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.microsoft.com"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; <a href="#">GrowTogether</a> </p>
+            <div class="footer-menu">
+                <ul class="f-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="action.html">Action</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donations.html">Donate</a></li>
+                    <li><a href="aboutus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <!--Footer ends here-->
+
+
 
 </body>
+
 </html>
