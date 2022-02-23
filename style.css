@@ -166,3 +166,21 @@
 }
 
 /* .................. */
+
+.headvol{
+  margin-top: 80px;
+  text-align: left;
+  color: rgb(209, 55, 55);
+  font-weight: bold;
+}
+
+.headpara{
+  line-height: 24px;
+  font-size:18px;
+  color:gray;
+}
+
+.voldiv{
+  margin-left:80px;
+  margin-right: 80px;
+}
