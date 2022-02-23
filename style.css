@@ -133,13 +133,15 @@
   text-align: center;
   color: rgb(209, 55, 55);
   font-weight: bold;
+  font-size: 60px;
+  font-family: poppins;
 }
 
 .para001{
   margin-top: 30px;
   width: 100%;
   text-align:center;
-  color: rgb(99, 99, 99);
+  color:#555;
   font-size: x-large;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   align-items: center;
@@ -185,3 +187,17 @@
   margin-right: 80px;
 }
 
+.hr1{
+  block-size: 5px;
+  
+}
+
+.mar{
+  margin-left:80px;
+  margin-right: 80px;
+}
+
+.boxpara{
+  font-size:24px;
+  color:#555;
+}
