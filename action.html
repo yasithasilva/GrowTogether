@@ -519,6 +519,27 @@ There is no defined target level of government spending for this indicator.</p>
    </ul>
  </div>
 
+ <script>
+   var project=setInterval(DonationProjects,10)
+   let count1 = 1;
+
+   function DonationProjects ()
+   {
+     count1++;
+     document.querySelector("#number1").innerHTML=
+     
+     count1;
+
+     //stop at 400
+
+     if(count1 == 400) {
+       clearInterval(project)
+     }
+      
+     
+   }
+ </script>
+
 
 
  <p class="para001">As a not for profit community, <b>Grow Together</b> us, always trying to do our best to achieve the above-mentioned
